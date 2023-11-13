@@ -1,0 +1,93 @@
+<html>
+<head>
+<title>
+Zomato
+</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,800&display=swap');
+</style>
+</head>
+<body>
+<nav>
+<div class="logo">
+<img src="logo.png" alt="Logo">
+</div>
+<div class="search">
+<input type="text" placeholder="Search dish by place" disabled>
+<select id="selected" onchange="filter()">
+<option value="All">All</option>
+<option value="Haryana">Haryana</option>
+<option value="Delhi">Delhi</option>
+</select>
+</div>
+<div>
+<button>
+<a id="Login" href="login.html">Login</a>
+</button>
+</div>
+</nav>
+<div class="foods">
+
+<div class="food" price="10" city="Haryana">
+<img src="1.jpg" alt="Paneer" title="Orange signifies energy and happiness">
+<div class="text">
+Butter Paneer<br>
+<span class="signifies">Orange signifies energy and happiness</span>
+</div>
+<div class="rating">⭐<br>⭐</div>
+<div class="ratings">⭐⭐</div>
+</div>
+
+<div class="food" price="20" city="Delhi">
+<img src="2.jpg" alt="Kheer" title="White signifies peace and purity">
+<div class="text">
+Rice Kheer<br>
+<span class="signifies">White signifies peace and purity</span>
+</div>
+<div class="rating">⭐<br>⭐<br>⭐</div>
+<div class="ratings">⭐⭐⭐</div>
+</div>
+
+<div class="food" price="30" city="All">
+<img src="3.jpg" alt="Juice" title="Red signifies fearlessness and beauty">
+<div class="text">
+Watermelon Juice<br>
+<span class="signifies">Red signifies fearlessness and beauty</span>
+</div>
+<div class="rating">⭐<br>⭐<br>⭐<br>⭐</div>
+<div class="ratings">⭐⭐⭐⭐</div>
+</div>
+
+<div class="food" price="40" city="Haryana">
+<img src="4.jpg" alt="Mocktail" title="Blue signifies health and wealth">
+<div class="text">Royal Blue Mocktail<br>
+<span class="signifies">Blue signifies health and wealth</span>
+</div>
+<div class="rating">⭐<br>⭐<br>⭐</div>
+<div class="ratings">⭐⭐⭐</div>
+</div>
+
+<div class="food" price="50" city="Delhi">
+<img src="5.jpg" alt="Daal" title="Yellow signifies happiness and brightness">
+<div class="text">Daal Tadka<br>
+<span class="signifies">Yellow signifies happiness and brightness</span>
+</div>
+<div class="rating">⭐<br>⭐<br>⭐<br>⭐<br>⭐</div>
+<div class="ratings">⭐⭐⭐⭐⭐</div>
+</div>
+
+<div class="food" price="60" city="All">
+<img src="6.jpg" alt="Palak" title="Green signifies new beginnings and growth">
+<div class="text">Palak Paneer<br>
+<span class="signifies">Green signifies new beginnings and growth</span>
+</div>
+<div class="rating">⭐</div>
+<div class="ratings">⭐</div>
+</div>
+</div>
+
+<img id="top" src="up.png" onclick="goTop()">
+<script src="script.js"></script>
+</body>
+</html>
